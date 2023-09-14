@@ -148,7 +148,7 @@ Traceback (most recent call last):
     newx = newx|y
 NameError: name 'newx' is not defined
 >>> 
-=========================== RESTART: /home/dai/CDAC-PG-DAI-Puneet-/test/functions.py ===========================
+=========================== RESTART: /home/dai/CDAC-PG-DAI-Puneet-/test/functions.py ==========================
 10 0b1010
 12 0b1100
 160 0b10100000
