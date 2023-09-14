@@ -1,0 +1,4 @@
+print("""dfghkehghrg
+jkdghkerhgh
+gerjhghrg""")
+
