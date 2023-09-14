@@ -40,30 +40,43 @@ else:
 '''
 
 #Q4)
-q = ' '
-s = 0
-
-while q != 'q':
-    a = int(input("Enter The Number : "))
-    q = input("Press q if you want to exit")
-    s = s + a
-
-print("Sum is : ",s)
 '''
 a=[]
 s = 0
-m = 0
+m = 1
 while True:
-    x = input("enter a number \npressq to get avrage and product of all enterd numbers")
-    try:
-        if x=="q":
-            for i in range:
-                s = s+a[i]
-                m = m*a[i]
-        else:
+    x = input("enter a number
+              :- ")
+    if x!="q":
+        try:
             a.append(int(x))
-            print(a)
-    except:
-        print("wrong dta type is enters")
-print(s , m)
+            print("press q to get results")
+        except:
+            print("please enter integers only or press q to get the results")
+    elif x=="q":
+        for i in range(len(a)):
+            s = (s+a[i])
+            m = m*a[i]
+        break
+    
+print(f"the avrage of all the entered numbers is {s/len(a)}\nthe product of all the enterd number is {m}")
+'''
+
+#Q5)
+
+x = int(input("enter a number to get count of digits and their sum :- "))
+n = []
+while True:
+    if x==0:
+        break
+    a = x%10
+    n.append(a)4
+    x=x/10
+    x= x//10
+    print(n)
+
+        
+'''
+a = 19%10
+print(a)
 '''
