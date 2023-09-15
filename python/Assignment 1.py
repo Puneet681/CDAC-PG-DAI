@@ -138,7 +138,6 @@ else:
     print(f"insurance = {ins}")
     print(f"total price to be paid = {x + tax + ins}")
 '''
-dfuihuirghg
 
     
 
