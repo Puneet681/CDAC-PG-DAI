@@ -63,20 +63,50 @@ print(f"the avrage of all the entered numbers is {s/len(a)}\nthe product of all 
 '''
 
 #Q5)
-
+'''
 x = int(input("enter a number to get count of digits and their sum :- "))
 n = []
+b = 0
 while True:
     if x==0:
         break
-    a = x%10
-    n.append(a)4
-    x=x/10
-    x= x//10
+    a = (x%10)
+    b = b+a
+    n.append(a)
+    x=x//10
+    
     print(n)
+print("number of digits in enterd number is       = ",len(n))
+print("addition of all digits in enterd number is = ",b)
 
-        
+    
 '''
-a = 19%10
-print(a)
+
+#Q6)
 '''
+x = int(input("enter an interger to get cubes of all number OR press 5 to get cubes from 1 to 4"))
+
+if x!=5:
+    for i in range(x):
+        print(f"{i}^3 = {i**3}")
+else:
+    for i in range(5):
+        print(f"{i}^3 = {i**3}")
+'''
+
+#Q7)
+'''
+s = 0
+a = []
+b = []
+for i in range(20):
+    x = int(input(f"enter {i+1}th number"))
+    a.append(x)
+    if x%2==0:
+        b.append(x)
+        s = s+x
+print(f"all the even number in \n{a} \nare {b} \nand their sum is {s}")
+'''
+
+#Q8)
+
