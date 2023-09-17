@@ -1,4 +1,3 @@
-
 import sys
 courselst=[("DBDA",100),("DAI",40)]
 def addnewcourse():
@@ -7,12 +6,23 @@ def addnewcourse():
     courselst.append((cname,capacity))
     return True
 
+
+
+
+
+
+
 def deletecourse():
     val = input("enter course name to be deleted")
-    lst_i = list(filter(lambda x:x[1]==val))
-    courselst.remove(lst_i[0])
+    lst_i = list(filter(lambda x:x[1]==val,courselst))
+    print(lst_i)
     displayall(courselst)
     
+
+
+
+
+
 def displayall(lst=courselst):
     for cname,capa in lst:
         print(f"{cname}--->{capa}")
@@ -44,7 +54,7 @@ def modifybycourseName(old,new):
         return 3
 choice=0
 while choice!=7:
-    choice =input("""
+    choice = int(input("""
     1. add new course
     2. delete the course
     3. modify course duration
@@ -52,8 +62,7 @@ while choice!=7:
     5. display all
     6. display only courses with capacity > given capacity
     7. exit
-    choice:""")
-
+    choice:"""))
     if choice==1:
         status=addnewcourse()
         if status:
