@@ -103,27 +103,7 @@ Ask for new value and then overwrite the old value.
 7. Display all vehicle names.
 8 Exit'''
 
-def add_name():
-    pass
 
-def del_name():
-    pass
-
-def mod_vic():
-    pass
-
-def search_vic():
-    pass
-
-def search_have_vic():
-    pass
-
-def disp_all_ppl():
-    pass
-
-def disp_all_vic():
-    pass
-    
 dic = {}
 
 while True:
