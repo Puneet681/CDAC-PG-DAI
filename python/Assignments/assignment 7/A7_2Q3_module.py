@@ -1,68 +1,46 @@
-def add_name(d = dict):
-    name = input("enter name of person")
-    vehicle = input("enter vehicle")
-    
+def add_name(d = dict, name = str , vehicle = str):
     d[name] = vehicle
-    print(f" new entry added")
+    return 1
 
-def del_name(d = dict):
-    name = input("enetr the name you want to delete")
+def del_name(d = dict , name = str):
     v = d.get(name,-1)
     if v != -1:
         ans = input(f"are you sure you want to delete {name} (y/n)")
-        if ans = "y":
+        if ans == "y":
             d.pop(name)
             return 1
         else:
-            print("selected no")
             return -1
     else:
         print("value not found")
         return 0
-def mod_vic(d = dict
-    vic = input("enter the old vehicle name")
-    n_vic = input("enter new vehicle name")
-    
-    for k in d.keys():
-        if d[k]==vic:
-            ans = input("vehicle name found \nare you sure you want to modify name \n(y/n)")
-            if ans =="y":
-                d[k]=n_vic
-                return 1
-            else:
-                print("selected no")
-                return -1
+def mod_vic(d = dict, name = str , n_vic = str):
+    v = d.get(-1)
+    if v != -1:
+        ans = input("person name found \nare you sure you want to modify name \n(y/n)")
+        if ans =="y":
+            d[name]=n_vic
+            return 1
         else:
-            print("value not found")
+            return -1
+    elif v == -1:
             return 0
             
                 
 
-def search_vic(d = dict):
-    name = input("enter the name of person")
-    for k in d:
-        if k==name:
-            return name
-        else:
-            print("no such veichle name found")
-            return 0
+def search_vic(d = dict , name = str):
+    v = d.get(name, 0)
+    if v != -1:
+        return v
+    return v
 
-def search_have_vic(d = dict):
-    vic = input("enter the name of vehicle you want to find")
-    new_d = {}
+def search_have_vic(d = dict, vic = str):
+    l = {}
     for k in d:
         if d[k]==vic:
-            new_d[k] = vic
-        else:
-            print("no such veichle name found")
-            return 0
-    return new_d
-
-def disp_all_ppl(d = dict):
-    print([k for k in d.keys()])
-    return 1
-
-def disp_all_vic(d = dict)
-    print([v for v in d.values()])
-    return 1
+            l.append(k)
+    if len(l) == 0:
+        return 0 , []
+    else:
+        return 1 ,  l
     
