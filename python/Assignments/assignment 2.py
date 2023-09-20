@@ -21,8 +21,32 @@ for i in range(n-1,0,-1):
     if i%2!=0:
          x= (n-i)//2
          print(" "*x,"*"*i)
-
-
+         
+#Q 2 c)
+n = int(input('enter no. of itrations'))
+k = 0
+for j in range(n,0,-1):
+    print(" "*k,end="")
+    for i in range(j,0,-1):
+        
+        print('1',end=" ")
+        if i == 1:
+            break
+        print('0',end =" ")
+    k = k + 2
+    
+        
+    print('\n')
+    
+    
+#Q 2 d)
+    
+n = int(input("enter no. of itration"))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j, end = "")
+    print("\n")
+    
 #Q3)
 '''
 x = int(input("enter 1st number"))
