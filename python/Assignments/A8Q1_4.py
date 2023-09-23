@@ -34,7 +34,6 @@ def A8Q3():
         print("not found")
 def A8Q4(user_name = '0', password = ""):
     
-    data ={}
     '''Write a python program to accept user name and password and validate it. username
 should contain only alphabets or digits and password length should be 8, starts with
 alphabet and should contain at least one special character(#,@) .
@@ -60,7 +59,7 @@ welcome to our application. otherwise ask to re-enter.
     password = input ('''password length should be 8, starts with
      alphabet and should contain at least one special character(#,@) .''')
 
-    m_pass = re.search("^[a-zA-Z][a-zA-Z0-9_\W]{7,}",password)
+    m_pass = re.search("^[a-zA-Z]\w*\W{1,}\w*",password)
     if m_pass == None:
         print("Passward is not in correct format")
         print('''password length should be 8, starts with

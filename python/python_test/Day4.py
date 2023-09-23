@@ -1,4 +1,4 @@
-'''
+
 lst = [10,20,10,34]
 lst.append('hello') # appends as single string
 print(lst)
