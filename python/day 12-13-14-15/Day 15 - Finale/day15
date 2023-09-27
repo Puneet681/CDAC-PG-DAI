@@ -1,0 +1,24 @@
+Django and Flask 
+add and display 
+Django - 
+- web app
+- provides server to connect to a database
+- web app is 3 tier 
+- i.e. client(Browser) <--> # sends request <--> server #retrives data <--> DB #stores data
+- when we load a page html,css files are downloaded on machine 
+- danjgo contains file called urls.py --> which contain which file to route to get data 
+
+Urls.py => routing 
+\hello => display
+etc..
+
+- in django databse is auto genreated to store data
+- MVT - Model (data) View () Templates () <------ (Django Architecture)
+- server contains ORM function where if we define variable in class it genreates database table
+
+- manage.py file helps us interact with project 
+- within a project there can be mutiple models and applicaitons 
+
+step 1 :
+make entry of ur app i 
+
