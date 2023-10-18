@@ -1,0 +1,119 @@
+import java.util.Scanner;
+
+class AccountHolder {
+	private int acc_no;
+	private String name;
+	private int Bal;
+	private static int cnt=0;
+	
+	public AccountHolder(int acc_no, String name, int bal) {
+		this.acc_no = acc_no;
+		this.name = name;
+		Bal = bal;
+		cnt++;
+	}
+	
+	public static int cnt() {
+		return cnt;
+	}
+	
+	public AccountHolder() {
+		this(0,"None",000);
+		cnt++;
+	}
+
+	public int getAcc_no() {
+		return acc_no;
+	}
+
+	public void setAcc_no(int acc_no) {
+		this.acc_no = acc_no;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getBal() {
+		return Bal;
+	}
+
+	public void setBal(int bal) {
+		Bal = bal;
+	}
+
+	public String toString() {
+		return "acc_no=" + acc_no + ", name=" + name + ", Bal=" + Bal ;
+	}
+	
+	public int deposit(int acc_no,String Name,int amm)
+	{
+		this.Bal = this.Bal+amm;
+		return Bal;
+	}
+	
+	public int withdrawl(int acc_no,String Name,int amm)
+	{
+		this.Bal = this.Bal-amm;
+		return Bal;
+	}
+	
+	
+	
+}
+
+
+
+public class Q5 {
+	
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1. Add record for account holder\n"
+				+ "2. Display details of all account holders.\n"
+				+ "3. Deposite an amount into perticular account\n"
+				+ "4. Withdraw an amount from perticular account\n"
+				+ ""
+				+ "Enter Choice : ");
+		int ch = sc.nextInt();
+		AccountHolder [] lst = new AccountHolder [10];
+		switch(ch) {
+		case 1:
+			System.out.println("Enter Account number");
+			int Ac_no = sc.nextInt();
+			System.out.println("Enter Account holder name");
+			String Name = sc.next(); 
+			System.out.println("Enter Account Balance");
+			int balance = sc.nextInt();
+			int x = AccountHolder.cnt();
+			if (x==10)
+			{
+				System.out.println("Limit reached");
+				break;
+			}
+			
+			AccountHolder A = new AccountHolder(Ac_no,Name,balance);
+			System.out.println(lst.length);
+			lst[x] = A;
+			break;
+			
+		case 2:
+			System.out.println("Account holder details :- ");
+			for(int i =0;i<lst.length;i++)
+			{
+				System.out.println(lst[i]);
+			}
+		case 3:
+		case 4:
+		
+			
+		}
+
+	}
+
+}

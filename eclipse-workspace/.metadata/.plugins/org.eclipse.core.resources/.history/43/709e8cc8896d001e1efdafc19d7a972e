@@ -1,0 +1,17 @@
+import Q3.Manager;
+import Q3.MarketExecutive;
+import in.Q2Emp.Salesp;
+import in.Q2Emp.WageEmp;
+
+public class Q3main {
+
+	public static void main(String[] args) {
+		Manager m1 = new Manager(1,"TATA",23,9,2023,20,200,200000,500);
+		System.out.println(m1.toString());
+		System.out.println("-=-==-===-=-=--=-=-=-=-=-=-=-=-=-=-==-");
+		MarketExecutive mk1 = new MarketExecutive(24,"puneet",10,6,2024,20,450);
+		System.out.println(mk1.toString());
+
+	}
+
+}

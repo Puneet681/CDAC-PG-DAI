@@ -1,0 +1,15 @@
+import in.opps.Laptop2;
+
+
+public class Getters_Setters {
+
+	public static void main(String[] args) {
+	Laptop lp21 = new Laptop();
+	Laptop lp22 = new Laptop(12,"USA",80000);
+	Laptop.showCnt();
+	
+	System.out.println(lp21);
+	System.out.println(lp22);
+	}
+
+}

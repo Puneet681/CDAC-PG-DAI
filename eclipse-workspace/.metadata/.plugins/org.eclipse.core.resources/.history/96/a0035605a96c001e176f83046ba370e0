@@ -1,0 +1,17 @@
+import in.opps.Laptop2;
+
+
+public class calling {
+
+
+		public static void main(String[] args) {
+		Laptop2 lp21 = new Laptop2();
+		Laptop2 lp22 = new Laptop2(12,"USA",80000);
+		Laptop2.showCnt();
+		
+		System.out.println(lp21);
+		System.out.println(lp22);
+		}
+
+	}
+

@@ -1,0 +1,152 @@
+import java.util.Scanner;
+
+class AccountHolder{
+	private int no;
+	private String name;
+	private int balance;
+	private static int val=0;
+	
+	
+	//Parameterized Constructor 
+	public AccountHolder(int no, String name, int balance) {
+		this.no = no;
+		this.name = name;
+		this.balance = balance;
+		val++;
+	}
+
+	public AccountHolder() {
+		no = 0;
+		name = "None";
+		balance = 0;
+		val++;
+	}
+	
+	public static int getval() {
+		return val;
+	}
+	
+	public int getNo() {
+		return no;
+	}
+
+	public void setNo(int no) {
+		this.no = no;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+	
+	public void deposit(int bal) {
+		this.balance = this.balance + bal;
+	}
+	
+	
+	public void withdraw(int bal) {
+		this.balance = this.balance - bal;
+	}
+
+	public String toString() {
+		return "no=" + no + ", name=" + name + ", balance=" + balance;
+	}
+	
+}
+
+
+public class A2Q1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		AccountHolder [] arr = new AccountHolder[10];
+		
+		while(true)
+		{
+		
+			System.out.println("1. Add record for account holder\n"
+					+ "2. Display details of all account holders.\n"
+					+ "3. Deposite an amount into perticular account\n"
+					+ "4. Withdraw an amount from perticular account\n"
+					+ "5. Exit");
+			int expr = sc.nextInt();
+			
+			if(expr==5) {
+				break;
+			}
+			
+			switch(expr) {
+			
+			case 1:
+				System.out.println("Enter Acc No : ");
+				int ACCno = sc.nextInt();
+				System.out.println("Enter Name : ");
+				String name = sc.next();
+				System.out.println("Enter Balance : ");
+	 			int balance = sc.nextInt();
+	 			
+	 			int x = AccountHolder.getval();
+	 			AccountHolder Ac = new AccountHolder(ACCno,name,balance);
+	 			
+	 			arr[x] = Ac;
+	 			break;
+	 			
+			case 2:
+				
+				x = AccountHolder.getval();
+				for(int i=0;i<x;i++) {
+					System.out.println(arr[i]);
+				}
+				break;
+			
+			case 3:	
+				
+				x = AccountHolder.getval();
+				
+				System.out.println("Enter Acc No : ");
+				ACCno = sc.nextInt();
+				System.out.println("Enter New Balance : ");
+				balance = sc.nextInt();
+				
+				for(int i=0;i<x;i++) {
+					if(arr[i].getNo() == ACCno) {
+						arr[i].deposit(balance);
+					}
+				}
+				break;
+	 
+				
+			case 4:
+				
+				x = AccountHolder.getval();
+				
+				System.out.println("Enter Acc No : ");
+				ACCno = sc.nextInt();
+				System.out.println("Enter New Balance : ");
+				balance = sc.nextInt();
+				
+				for(int i=0;i<x;i++) {
+					if(arr[i].getNo() == ACCno) {
+						arr[i].deposit(balance);
+					}
+				}
+				break;
+			}
+			
+			
+		}
+
+		}
+		
+}

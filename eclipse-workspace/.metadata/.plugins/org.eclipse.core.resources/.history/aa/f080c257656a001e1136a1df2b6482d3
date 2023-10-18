@@ -1,0 +1,19 @@
+
+/*
+Write a program to generate all possible combinations of 1, 2, 3 using for loop.
+*/
+
+public class Q10 {
+
+	public static void main(String[] args) {
+		int a = 1;
+		int b = 2;
+		int c = 3;
+		
+		for(int i=1;i==3;i++)
+		{
+			System.out.println(i);	
+		}
+	}
+
+}

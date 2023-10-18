@@ -1,0 +1,32 @@
+package com.cdac.pack2;
+
+public class pack2 {
+
+	private String CName;
+	private int BStr;
+	public pack2(String cName, int bStr) {
+		CName = cName;
+		BStr = bStr;
+	}
+	
+	public String getCName() {
+		return CName;
+	}
+	
+	public void setCName(String cName) {
+		CName = cName;
+	}
+	public int getBStr() {
+		return BStr;
+	}
+	public void setBStr(int bStr) {
+		BStr = bStr;
+	}
+	public String toString() {
+		return "CName=" + CName + ", BStr=" + BStr;
+	}
+	
+	
+
+
+}

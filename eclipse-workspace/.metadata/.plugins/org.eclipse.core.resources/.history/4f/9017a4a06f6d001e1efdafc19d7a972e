@@ -1,0 +1,12 @@
+import in.cdac.Date;
+import in.cdac.Employee;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Employee emp1 = new Employee(102,"Jay",23,10,1990);
+		emp1.show();
+
+	}
+
+}

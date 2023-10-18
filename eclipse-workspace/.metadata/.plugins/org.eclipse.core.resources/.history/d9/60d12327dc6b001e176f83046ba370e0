@@ -1,0 +1,15 @@
+
+public class Reverse_Array {
+
+	public static void main(String[] args) {
+		int [] a = {1,5,2,4,5,2,5};
+		for(int val:a)
+			System.out.print(val);
+		System.out.println("Reversed");
+		for(int i=a.length;i==0;i--) {
+			System.out.print(a[i]+" ");
+		}
+
+	}
+
+}

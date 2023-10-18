@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Q6 {
+
+	public static void main(String[] args) {
+		System.out.println("Enetr two numbers");
+		Scanner sc =new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println("1. addition"
+				+ "2. substraction"
+				+ "3. multiplication"
+				+ "4. division");
+	}
+
+}

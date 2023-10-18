@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Q2A {
+
+	public static void main(String[] args) {
+		
+		int [][] arr1 = new int[3][3];
+		int [][] tra = new int[3][3];
+		int [][] arr2 = new int[3][3];
+		int [][] result = new int[3][3];
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enetr elements in 3X3 array");
+		
+		for(int []temp:arr1)
+		{
+			for(int val:temp) {
+				val = sc.nextInt();
+			}
+		}
+		for(int []temp:arr1)
+		{
+			for(int val:temp) {
+				System.out.print(val);
+			}
+			System.out.println();
+		}
+
+	}
+
+}

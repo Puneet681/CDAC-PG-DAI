@@ -1,0 +1,80 @@
+import java.util.Scanner;
+
+class AccountHodler{
+	private int no;
+	private String name;
+	private int balance;
+	
+	
+	//Parameterized Constructor 
+	public AccountHodler(int no, String name, int balance) {
+		this.no = no;
+		this.name = name;
+		this.balance = balance;
+	}
+
+	public AccountHodler() {
+		no = 0;
+		name = "None";
+		balance = 0;
+	}
+	
+	public int getNo() {
+		return no;
+	}
+
+	public void setNo(int no) {
+		this.no = no;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+	
+	public void deposit(int val) {
+		this.balance = balance + val;
+	}
+	
+	public void withdraw(int val) {
+		this.balance = balance - val;
+	}
+
+	public String toString() {
+		return "no=" + no + ", name=" + name + ", balance=" + balance;
+	}
+	
+}
+
+
+public class A3Q1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("1. Add record for account holder\n"
+				+ "			2. Display details of all account holders.\n"
+				+ "			3. Deposite an amount into perticular account\n"
+				+ "			4. Withdraw an amount from perticular account\n"
+				+ "         5. Exit");
+		int expr = sc.nextInt();
+		switch(expr) {
+		
+		case 1:
+			
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+class Laptop
+{
+	private String name;
+	private int make;
+	private int cost;
+	
+	// This is a constructor
+	Laptop(){
+		name = "Hp";
+		make = 2021;
+		cost = 60000;	
+	}
+	
+	
+	
+}
+
+
+public class Abstraction_Encapsulation {
+
+	public static void main(String[] args) {
+
+	}
+
+}

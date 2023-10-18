@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class If_else {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter New Input : ");
+		int check = sc.nextInt();
+		
+		if(check%2==0)
+			System.out.println("Even...");
+		else
+			System.out.println("Odd...");
+		
+		for(int i=0 ; i<=10 ; i++)
+			System.out.print(i*check+" ");
+		
+	
+		
+
+	}
+
+}

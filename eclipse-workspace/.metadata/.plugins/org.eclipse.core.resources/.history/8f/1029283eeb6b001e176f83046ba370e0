@@ -1,0 +1,35 @@
+class Laptop
+{
+	private String name;
+	private int make;
+	private int cost;
+	
+	// This is a constructor
+	public Laptop(){
+		// default values initialzed in constructor 
+		name = "hp";
+		make = 100;
+		cost = 200;	
+	}
+	
+	//Parameterized constructor 
+	public Laptop(String name,int make,int cost) {
+		name = name;
+		make = make;
+		cost = cost;
+	}
+	
+	// to display  
+	public String toString()
+	{
+		return name+""+make+""+cost;
+	}
+}
+
+public class Abstraction_Encapsulation {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package in.Q2Emp;
+
+public class WageEmp extends Employee {
+
+}

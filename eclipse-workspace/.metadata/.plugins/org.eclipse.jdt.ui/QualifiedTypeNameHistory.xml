@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="if_else"/>
+    <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="AccountHolder"/>
+    <fullyQualifiedTypeName name="student"/>
+    <fullyQualifiedTypeName name="com.cdac.pack1.Student"/>
+    <fullyQualifiedTypeName name="com.cdac.pack2.Batch"/>
+    <fullyQualifiedTypeName name="java.lang.runtime.SwitchBootstraps"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

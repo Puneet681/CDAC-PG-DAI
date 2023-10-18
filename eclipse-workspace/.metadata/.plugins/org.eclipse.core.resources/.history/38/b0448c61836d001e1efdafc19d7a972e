@@ -1,0 +1,13 @@
+import in.Q2Emp.Salesp;
+
+public class Q2main {
+
+	public static void main(String[] args) {
+		Salesp s1 = new Salesp(1,"TATA",23,9,2023,20,200,200000,500);
+		s1.show();
+		System.out.println(s1.show());
+		
+
+	}
+
+}

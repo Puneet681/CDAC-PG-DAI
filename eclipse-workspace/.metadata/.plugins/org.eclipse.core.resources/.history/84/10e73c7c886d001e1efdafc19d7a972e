@@ -1,0 +1,17 @@
+package Q3;
+
+public class MarketExecutive extends Employee {
+	private int km;
+	private int Tallow;
+	private int allow;
+	
+	public MarketExecutive(int empid, String name, int salary, int km, int tallow, int allow) {
+		super(empid, name, salary);
+		this.km = km;
+		Tallow = tallow;
+		this.allow = allow;
+	}
+	
+	
+	
+}

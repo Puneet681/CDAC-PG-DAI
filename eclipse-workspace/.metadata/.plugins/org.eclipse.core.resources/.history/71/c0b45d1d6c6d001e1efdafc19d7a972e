@@ -1,0 +1,22 @@
+package in.cdac;
+
+public class Employee {
+	private int empid;
+	private String name;
+	private Date dob;
+	
+	public Employee() {
+		empid = 101;
+		name = "abc";
+		dob = new Date();
+	}
+
+	public Employee(int empid, String name, Date dob) {
+		this.empid = empid;
+		this.name = name;
+		this.dob = dob;
+	}
+	
+	
+
+}

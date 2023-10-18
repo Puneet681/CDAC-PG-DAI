@@ -1,0 +1,8 @@
+package Q3;
+
+public class MarketExecutive extends Employee {
+	private int km;
+	private int Tallow;
+	private int allow;
+	
+}

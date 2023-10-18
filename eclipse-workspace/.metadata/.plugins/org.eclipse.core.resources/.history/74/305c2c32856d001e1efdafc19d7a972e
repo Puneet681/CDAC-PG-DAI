@@ -1,0 +1,7 @@
+package Q3;
+
+import in.Q2Emp.Employee;
+
+public class Marketing_Ex extends Employee {
+
+}
